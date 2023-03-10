@@ -16,11 +16,11 @@ protected $attributes = [
 
 public function type(): Type
 {
-return Type::nonNull(Type::listOf(Type::nonNull(GraphQL::type('Game'))));
+return Type::nonNull(Type::listOf(Type::nonNull(GraphQL::type('Games'))));
 }
 
 
-public function resolve($root, array $args, $context, ResolveInfo $resolveInfo, Closure $getSelectFields)
+public function resolve($root, $args)
 {
 return Game::all();
 }

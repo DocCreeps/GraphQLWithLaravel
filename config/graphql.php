@@ -77,6 +77,7 @@ return [
             'query' => [
                 // ExampleQuery::class,
                 'games'=>App\graphql\Queries\GamesQuery::class,
+                'game'=>App\graphql\Queries\GameQuery::class,
             ],
             'mutation' => [
                 // ExampleMutation::class,
@@ -84,7 +85,7 @@ return [
             // The types only available in this schema
             'types' => [
                 // ExampleType::class,
-                'game'=>App\graphql\Types\GameType::class,
+                'Games'=>App\graphql\Types\GameType::class,
             ],
 
             // Laravel HTTP middleware

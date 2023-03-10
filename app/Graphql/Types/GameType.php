@@ -8,7 +8,7 @@ use Rebing\GraphQL\Support\Type as GraphQLType;
 class GameType extends GraphQLType
 {
     protected $attributes = [
-        'name'          => 'Game',
+        'name'          => 'Games',
         'description'   => 'Video game',
         // Note: only necessary if you use `SelectFields`
         'model'         => Game::class,
